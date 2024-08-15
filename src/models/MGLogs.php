@@ -63,7 +63,15 @@ class MGLogs extends ActiveRecord
             '_id' => 'ID',
             'update_id' => Module::t('module', 'Update ID'),
             'created' => Module::t('module', 'Update'),
-            'controller' => Module::t('module', 'Controller')
+            'controller' => Module::t('module', 'Controller'),
+            'client_id' => Module::t('module', 'Client'),
+            'model_class' => Module::t('module', 'Model'),
+            'model_id' => Module::t('module', 'Model Id'),
+            'logs' => Module::t('module', 'Logs'),
+            'ip' => Module::t('module', 'IP'),
+            'action' => Module::t('module', 'Action'),
+            'params' => Module::t('module', 'Params'),
+            'checked' => Module::t('module', 'Checked'),
         ];
     }
 

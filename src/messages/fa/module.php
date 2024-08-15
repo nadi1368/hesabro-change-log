@@ -11,5 +11,12 @@ return [
     'Reset' => 'ریست',
     'Search' => 'جستجو',
     'All' => 'همه',
-    'Controller' => 'کنترلر'
+    'Controller' => 'کنترلر',
+    'Client' => 'مشتری',
+    'Model' => 'مدل',
+    'Model Id' => 'شناسه مدل',
+    'IP' => 'آی‌پی',
+    'Action' => 'عملیات',
+    'Params' => 'پارامترها',
+    'Checked' => 'تایید شده',
 ];
