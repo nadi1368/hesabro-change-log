@@ -12,7 +12,7 @@ class Module extends BaseModule
 
     public array $ignoreClasses = [];
 
-    public string | null $mongo_dns;
+    public string | null $mongo_dsn;
 
     public function init(): void
     {

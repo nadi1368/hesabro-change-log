@@ -12,7 +12,7 @@ return [
     'components' => [
         'mongodb' => [
             'class' => Connection::class,
-            'dsn' => $app->modules['change-log']['mongo_dns'] ?? ''
+            'dsn' => $app->modules['change-log']['mongo_dsn'] ?? ''
         ]
     ],
     'modules' => [
