@@ -1,18 +1,17 @@
 <?php
 
 use hesabro\helpers\Module as HesabroHelpersModule;
-use yii\base\Application;
 use yii\mongodb\Connection;
 
 /**
- * @var Application $app
+ * @var array $config
  */
 
 return [
     'components' => [
         'mongodb' => [
             'class' => Connection::class,
-            'dsn' => $app->modules['change-log']['mongo_dsn'] ?? ''
+            'dsn' => $config['mongo_dsn'] ?? ''
         ]
     ],
     'modules' => [
