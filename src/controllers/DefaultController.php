@@ -15,26 +15,26 @@ class DefaultController extends Controller
     public function behaviors()
     {
         return [
-//            'access' => [
-//                'class' => AccessControl::class,
-//                'rules' => [
-//                    [
-//                        'allow' => true,
-//                        'actions' => ['index'],
-//                        'roles' => ['hesabro/changelog/default/index'],
-//                    ],
-//                    [
-//                        'allow' => true,
-//                        'actions' => ['view', 'view-ajax'],
-//                        'roles' => ['hesabro/changelog/default/view'],
-//                    ],
-//                    [
-//                        'allow' => true,
-//                        'actions' => ['expand'],
-//                        'roles' => ['hesabro/changelog/default/expand'],
-//                    ],
-//                ]
-//            ]
+            'access' => [
+                'class' => AccessControl::class,
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['changelog/default/index'],
+                        'actions' => ['index'],
+                    ],
+                    [
+                        'allow' => true,
+                        'roles' => ['changelog/default/view'],
+                        'actions' => ['view', 'view-ajax'],
+                    ],
+                    [
+                        'allow' => true,
+                        'roles' => ['changelog/default/expand'],
+                        'actions' => ['expand'],
+                    ],
+                ]
+            ]
         ];
     }
 
