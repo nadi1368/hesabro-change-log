@@ -7,8 +7,6 @@ use yii\base\BootstrapInterface;
 
 class Bootstrap implements BootstrapInterface
 {
-    private array $requiredConfigs = [];
-
     /**
      * Bootstrap method to be called during application bootstrap stage.
      * @param Application $app the application currently running
