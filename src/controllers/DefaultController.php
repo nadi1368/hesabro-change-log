@@ -21,18 +21,8 @@ class DefaultController extends Controller
                     [
                         'allow' => true,
                         'roles' => ['changelog/default/index'],
-                        'actions' => ['index'],
-                    ],
-                    [
-                        'allow' => true,
-                        'roles' => ['changelog/default/view'],
-                        'actions' => ['view', 'view-ajax'],
-                    ],
-                    [
-                        'allow' => true,
-                        'roles' => ['changelog/default/expand'],
-                        'actions' => ['expand'],
-                    ],
+                        'actions' => ['index', 'view', 'view-ajax', 'expand'],
+                    ]
                 ]
             ]
         ];
