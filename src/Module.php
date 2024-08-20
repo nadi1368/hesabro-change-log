@@ -4,20 +4,28 @@ namespace hesabro\changelog;
 
 use Yii;
 use yii\base\Module as BaseModule;
+use hesabro\helpers\Module as HesabroHelpersModule;
 use yii\i18n\PhpMessageSource;
 
 class Module extends BaseModule
 {
-    public string | null $user;
+    public string $mongoConnection = 'mongodb';
 
     public array $ignoreClasses = [];
 
-    public string | null $mongo_dsn;
+    public string | null $user;
 
     public function init(): void
     {
         parent::init();
+
         $this->registerTranslation();
+
+        $this->setModules([
+            'helpers' => [
+                'class' => HesabroHelpersModule::class,
+            ]
+        ]);
     }
 
     private function registerTranslation(): void

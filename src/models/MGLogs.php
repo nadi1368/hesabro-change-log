@@ -4,7 +4,7 @@ namespace hesabro\changelog\models;
 
 use hesabro\changelog\Module;
 use Yii;
-use yii\mongodb\ActiveRecord;
+use hesabro\changelog\ActiveRecord;
 
 /**
  *

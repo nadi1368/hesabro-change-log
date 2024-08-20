@@ -1,6 +1,5 @@
 <?php
 
-use hesabro\helpers\Module as HesabroHelpersModule;
 use yii\mongodb\Connection;
 
 /**
@@ -15,8 +14,6 @@ return [
         ]
     ],
     'modules' => [
-        'helpers' => [
-            'class' => HesabroHelpersModule::class,
-        ]
+
     ]
 ];
