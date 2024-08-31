@@ -8,7 +8,7 @@ use hesabro\helpers\widgets\grid\GridView;
 /* @var hesabro\changelog\models\MGLogSearch $searchModel */
 /* @var yii\data\ActiveDataProvider $dataProvider */
 
-$this->title = Module::t("app", 'Logs');
+$this->title = Module::t('module', 'Logs');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="card">

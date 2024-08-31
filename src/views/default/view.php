@@ -10,7 +10,7 @@ use yii\helpers\Html;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = $searchModel->model_class;
-$this->params['breadcrumbs'][] = ['label' => Module::t('app', 'Mongo Logs'), 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => Module::t('module', 'Logs'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="card">
@@ -19,11 +19,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
         </div>
         <div>
-            <?= Html::a(Module::t('app','All'),
+            <?= Html::a(Module::t('module','All'),
                 ['/mongo/log/index', 'MGLogSearch[model_id]' => $searchModel->model_id, 'MGLogSearch[model_class]' => $searchModel->model_class],
                 [
                     'class' => 'btn btn-secondary',
-                    'title' => Module::t('app', 'All'),
+                    'title' => Module::t('module', 'All'),
                     'data-size' => 'modal-xl'
                 ]); ?>
         </div>
