@@ -28,8 +28,8 @@ use yii\helpers\Html;
                 <?php $changedValue = MGLogs::getChangedValue($name, $value, get_class($owner)); ?>
                 <tr>
                     <?= Html::tag('td', $owner->getAttributeLabel($name)) ?>
-                    <?= Html::tag('td', isset($changedValue['from']) ? $changedValue['from'] : '') ?>
-                    <?= Html::tag('td', isset($changedValue['to']) ? $changedValue['to'] : '') ?>
+                    <?= Html::tag('td', isset($changedValue['from']) ? (is_array($changedValue['from']) ? json_encode($changedValue['from']) : $changedValue['from']) : '') ?>
+                    <?= Html::tag('td', isset($changedValue['to']) ? (is_array($changedValue['to']) ? json_encode($changedValue['to']) : $changedValue['to']) : '') ?>
                 </tr>
             <?php endif; ?>
         <?php endforeach; ?>
